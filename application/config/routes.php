@@ -59,3 +59,11 @@ $route['add_product']= 'Produk/Produk/Tambah_Produk';
 // Halaman Dashboard
 $route['dashboard']= 'Admin/Dashboard';
 
+// Halaman List Produk
+$route['list_produk']= 'Produk/List_Produk';
+
+// Halaman Transaksi
+$route['transaksi']= 'Transaksi/Transaksi';
+
+// Halaman Customer
+$route['customer']= 'Customer/Customer';

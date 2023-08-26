@@ -27,6 +27,7 @@
                                         <th class="text-center">
                                             <i class="fas fa-th"></i>
                                         </th>
+                                        <th>No</th>
                                         <th>ID Customer</th>
                                         <th>ID Transaksi</th>
                                         <th>User ID</th>
@@ -38,17 +39,20 @@
                                     </tr>
                                 </thead>
                                 <tbody>
+                                    <?php $no=1; foreach($customer as $d) : ?>
                                     <tr>
                                         <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
+                                        <td><?php echo $no++ ?></td>
+                                        <td><?php echo $d->id_customer?></td>
+                                        <td><?php echo $d->id_transaksi?></td>
+                                        <td><?php echo $d->user_id?></td>
+                                        <td><?php echo $d->nama?></td>
+                                        <td><?php echo $d->kode_customer?></td>
+                                        <td><?php echo $d->createdAt?></td>
+                                        <td><?php echo $d->updatedAt?></td>
                                         <td><a href="#" class="btn btn-secondary">Detail</a></td>
                                     </tr>
+                                    <?php endforeach; ?>
                                 </tbody>
                             </table>
                         </div>

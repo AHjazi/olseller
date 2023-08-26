@@ -52,3 +52,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'LandingPage';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+
+// Produk
+$route['add_product']= 'Produk/Produk/Tambah_Produk';
+
+// Halaman Dashboard
+$route['dahsboard']= 'Admin/Dashboard';

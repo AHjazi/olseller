@@ -36,11 +36,9 @@
                     </div>
                     <div class="header_box">
                         <div class="lang_box ">
-                            <a href="<?php echo base_url('dashboard')?>" title="Login" class="nav-link"
-                                aria-expanded="true">
-                                Login
-
-                            </a>
+                        <a href="<?php echo base_url('dashboard'); ?>" title="Login" class="nav-link" aria-expanded="true">
+    Login
+</a>
                             <div class="dropdown-menu ">
                                 <a href="#" class="dropdown-item">
                                     <img src="images/flag-france.png" class="mr-2" alt="flag">

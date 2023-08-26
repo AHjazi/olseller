@@ -6,7 +6,6 @@ class Produk extends CI_Controller {
 	
 	public function Tambah_Produk()
 	{
-		// var_dump($data);exit;
 		$this->load->view('partials/header');
         $this->load->view('partials/sidebar');
         $this->load->view('Produk/tambah_produk');

@@ -57,4 +57,5 @@ $route['translate_uri_dashes'] = FALSE;
 $route['add_product']= 'Produk/Produk/Tambah_Produk';
 
 // Halaman Dashboard
-$route['dahsboard']= 'Admin/Dashboard';
+$route['dashboard']= 'Admin/Dashboard';
+

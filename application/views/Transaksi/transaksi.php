@@ -27,26 +27,32 @@
                                         <th class="text-center">
                                             <i class="fas fa-th"></i>
                                         </th>
+                                        <th>No</th>
                                         <th>ID Transaksi</th>
                                         <th>User ID</th>
                                         <th>Total</th>
                                         <th>Status</th>
                                         <th>CreateAt</th>
+                                        <th>Snap URL</th>
                                         <th>UpdateAt</th>
                                         <th>Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
+                                    <?php $no=1; foreach($transaksi as $d) : ?>
                                     <tr>
                                         <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
+                                        <td><?php echo $no++ ?></td>
+                                        <td><?php echo $d->id_transaksi?></td>
+                                        <td><?php echo $d->user_id?></td>
+                                        <td><?php echo $d->total?></td>
+                                        <td><?php echo $d->status?></td>
+                                        <td><?php echo $d->snap_url?></td>
+                                        <td><?php echo $d->createdAt?></td>
+                                        <td><?php echo $d->updatedAt?></td>
                                         <td><a href="#" class="btn btn-secondary">Detail</a></td>
                                     </tr>
+                                    <?php endforeach; ?>
                                 </tbody>
                             </table>
                         </div>

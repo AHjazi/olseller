@@ -60,10 +60,16 @@ $route['add_product']= 'Produk/Produk/Tambah_Produk';
 $route['dashboard']= 'Admin/Dashboard';
 
 // Halaman List Produk
-$route['list_produk']= 'Produk/List_Produk';
+$route['list_produk']= 'Produk/Produk';
 
 // Halaman Transaksi
 $route['transaksi']= 'Transaksi/Transaksi';
 
 // Halaman Customer
 $route['customer']= 'Customer/Customer';
+
+// Halaman Edit Produk
+$route['edit_produk/(:any)'] = 'Produk/Produk/Edit_Produk/$1';
+
+// Hapus Produk
+$route['hapus_produk/(:any)'] = 'Produk/Produk/Hapus_Produk/$1';

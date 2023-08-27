@@ -54,7 +54,7 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 // Produk
-$route['add_product']= 'Produk/Produk/Tambah_Produk';
+$route['add_product']= 'Produk/List_Produk/Tambah_Produk';
 
 // Halaman Dashboard
 $route['dashboard']= 'Admin/Dashboard';

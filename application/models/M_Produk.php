@@ -30,4 +30,14 @@
         $this->db->delete($table);
     }
 
+    function get_total($conn) {
+        $query = "SELECT COUNT(*) AS jumlah FROM product";
+        $hasil = mysqli_query($conn, $query);
+        while ($data = mysqli_fetch_array($hasil)) {
+            $jumlah = $data['jumlah'];
+        }
+    
+        return $jumlah;
+    }
+
 	}

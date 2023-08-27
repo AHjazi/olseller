@@ -18,6 +18,7 @@
     <link rel="stylesheet" type="text/css" href="<?= base_url();?>assets/css/bootstrap.min.css">
     <!-- style css -->
     <link rel="stylesheet" type="text/css" href="<?= base_url();?>assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="<?= base_url();?>assets/css/style2.css">
     <!-- Responsive-->
     <link rel="stylesheet" href="<?= base_url();?>assets/css/responsive.css">
     <!-- fevicon -->
@@ -69,11 +70,15 @@
                     <div class="col-sm-12">
                         <div class="custom_menu">
                             <ul>
-                                <li><a href="#">Best Sellers</a></li>
-                                <li><a href="#">Gift Ideas</a></li>
-                                <li><a href="#">New Releases</a></li>
-                                <li><a href="#">Today's Deals</a></li>
+                                <li><a href="#">Produk</a></li>
+                                <li><a href="#">Layanan</a></li>
+                                <li><a href="#">Harga</a></li>
+                                <li><a href="#">Support</a></li>
                                 <li><a href="#">Customer Service</a></li>
+                                 <div class="header_box">
+                        <div class="lang_box ">
+                        <a href="<?php echo base_url('dashboard'); ?>" title="Login" class="nav-link" aria-expanded="true">
+    Login
                             </ul>
                         </div>
                     </div>

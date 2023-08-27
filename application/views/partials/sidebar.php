@@ -11,11 +11,11 @@
                         <a href="add_product.php">Jewellery</a>
                         <a href="<?php echo base_url('tambah_produk')?>">Add Product</a>
                     </div>
-                    <span class="toggle_icon" onclick="openNav()"><img src="assets/images/toggle-icon.png"></span>
+                    <!-- <span class="toggle_icon" onclick="openNav()"><img src="assets/images/toggle-icon.png"></span> -->
                     <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                        <!-- <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All Category
-                        </button>
+                        </button> -->
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                             <a class="dropdown-item" href="#">Action</a>
                             <a class="dropdown-item" href="#">Another action</a>
@@ -24,7 +24,7 @@
                     </div>
                     <div class="main">
                         <!-- Another variation with a button -->
-                        <div class="input-group">
+                        <!-- <div class="input-group">
                             <input type="text" class="form-control" placeholder="Search this blog">
                             <div class="input-group-append">
                                 <button class="btn btn-secondary" type="button"
@@ -32,21 +32,21 @@
                                     <i class="fa fa-search"></i>
                                 </button>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="header_box">
                         <div class="lang_box ">
-                        <a href="<?php echo base_url('dashboard'); ?>" title="Login" class="nav-link" aria-expanded="true">
-    Login
+                        <!-- <a href="<?php echo base_url('dashboard'); ?>" title="Login" class="nav-link" aria-expanded="true">
+    Login -->
 </a>
-                            <div class="dropdown-menu ">
+                            <!-- <div class="dropdown-menu ">
                                 <a href="#" class="dropdown-item">
                                     <img src="images/flag-france.png" class="mr-2" alt="flag">
                                     French
                                 </a>
-                            </div>
+                            </div> -->
                         </div>
-                        <div class="login_menu">
+                        <!-- <div class="login_menu">
                             <ul>
                                 <li><a href="#">
                                         <i class="fa fa-shopping-cart" aria-hidden="true"></i>
@@ -57,7 +57,7 @@
                                         <span class="padding_10">Cart</span></a>
                                 </li>
                             </ul>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -72,8 +72,8 @@
                         <div class="carousel-item active">
                             <div class="row">
                                 <div class="col-sm-12">
-                                    <h1 class="banner_taital">Get Start <br>Your favriot shoping</h1>
-                                    <div class="buynow_bt"><a href="#">Buy Now</a></div>
+                                    <h1 class="banner_taital">Ayo Mulai <br>Bisnis Mudah Dengan Olseller</h1>
+                                    <div class="buynow_bt"><a href="#">Beli Sekarang</a></div>
                                 </div>
                             </div>
                         </div>

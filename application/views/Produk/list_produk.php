@@ -3,85 +3,67 @@
         <div class="section-header">
             <h1>List Produk</h1>
         </div>
-        <div class="section-body">
-        </div>
         <div class="row">
-            <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-                <article class="article article-style-b">
-                    <div class="article-header">
-                        <div class="article-image" data-background="assets/img/news/img13.jpg">
-                        </div>
-                        <div class="article-badge">
-                            <div class="article-badge-item bg-danger"><i class="fas fa-fire"></i> Trending</div>
-                        </div>
-                    </div>
-                    <div class="article-details">
-                        <div class="article-title">
-                            <h2><a href="#">Excepteur sint occaecat cupidatat non proident</a></h2>
-                        </div>
-                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse
-                            cillum dolore eu fugiat nulla pariatur. </p>
-                        <div class="article-cta">
-                            <a href="#">Read More <i class="fas fa-chevron-right"></i></a>
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>List Transaksi</h4>
+                        <div class="card-header-action">
+                            <form>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Search">
+                                    <div class="input-group-btn">
+                                        <button class="btn btn-primary"><i class="fas fa-search"></i></button>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
-                </article>
-            </div>
-            <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-                <article class="article article-style-b">
-                    <div class="article-header">
-                        <div class="article-image" data-background="assets/img/news/img15.jpg">
+                    <div class="card-body p-0">
+                        <div class="table-responsive">
+                            <table class="table table-striped" id="sortable-table">
+                                <thead>
+                                    <tr>
+                                        <th class="text-center">
+                                            <i class="fas fa-th"></i>
+                                        </th>
+                                        <th>No</th>
+                                        <th>ID Produk</th>
+                                        <th>User ID</th>
+                                        <th>Kategori</th>
+                                        <th>Nama</th>
+                                        <th>Deskripsi</th>
+                                        <th>Harga</th>
+                                        <th>Stok</th>
+                                        <th>Gambar</th>
+                                        <th>CreatedAT</th>
+                                        <th>UpdatedAT</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <?php $no=1; foreach($product as $d) : ?>
+                                    <tr>
+                                        <td></td>
+                                        <td><?php echo $no++ ?></td>
+                                        <td><?php echo $d->id_product?></td>
+                                        <td><?php echo $d->user_id?></td>
+                                        <td><?php echo $d->kategori?></td>
+                                        <td><?php echo $d->nama?></td>
+                                        <td><?php echo $d->deskripsi?></td>
+                                        <td><?php echo $d->harga?></td>
+                                        <td><?php echo $d->stok?></td>
+                                        <td><?php echo $d->gambar?></td>
+                                        <td><?php echo $d->createdAt?></td>
+                                        <td><?php echo $d->updatedAt?></td>
+                                        <td><a href="#" class="btn btn-secondary">Detail</a></td>
+                                    </tr>
+                                    <?php endforeach; ?>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
-                    <div class="article-details">
-                        <div class="article-title">
-                            <h2><a href="#">Excepteur sint occaecat cupidatat non proident</a></h2>
-                        </div>
-                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse
-                            cillum dolore eu fugiat nulla pariatur. </p>
-                        <div class="article-cta">
-                            <a href="#">Read More <i class="fas fa-chevron-right"></i></a>
-                        </div>
-                    </div>
-                </article>
-            </div>
-            <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-                <article class="article article-style-b">
-                    <div class="article-header">
-                        <div class="article-image" data-background="assets/img/news/img07.jpg">
-                        </div>
-                    </div>
-                    <div class="article-details">
-                        <div class="article-title">
-                            <h2><a href="#">Excepteur sint occaecat cupidatat non proident</a></h2>
-                        </div>
-                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse
-                            cillum dolore eu fugiat nulla pariatur. </p>
-                        <div class="article-cta">
-                            <a href="#">Read More <i class="fas fa-chevron-right"></i></a>
-                        </div>
-                    </div>
-                </article>
-            </div>
-            <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-                <article class="article article-style-b">
-                    <div class="article-header">
-                        <div class="article-image" data-background="assets/img/news/img02.jpg">
-                        </div>
-                    </div>
-                    <div class="article-details">
-                        <div class="article-title">
-                            <h2><a href="#">Excepteur sint occaecat cupidatat non proident</a></h2>
-                        </div>
-                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse
-                            cillum dolore eu fugiat nulla pariatur. </p>
-                        <div class="article-cta">
-                            <a href="#">Read More <i class="fas fa-chevron-right"></i></a>
-                        </div>
-                    </div>
-                </article>
+                </div>
             </div>
         </div>
-</div>
-</section>
 </div>

@@ -20,9 +20,11 @@ class List_Produk extends CI_Controller {
 	 */
 	public function index()
 	{
+		$this->load->model('M_Produk');
+		$data['product'] = $this->M_Produk->show_data();
 		$this->load->view('partials_admin/header',);
         $this->load->view('partials_admin/sidebar');
-        $this->load->view('Produk/list_produk');
+        $this->load->view('Produk/list_produk',$data);
         $this->load->view('partials_admin/footer');
 	}
 }

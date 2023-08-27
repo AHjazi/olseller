@@ -38,7 +38,7 @@
                                         <th>Gambar</th>
                                         <th>CreatedAT</th>
                                         <th>UpdatedAT</th>
-                                        <th>Action</th>
+                                        <th colspan="2">Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -53,10 +53,22 @@
                                         <td><?php echo $d->deskripsi?></td>
                                         <td><?php echo $d->harga?></td>
                                         <td><?php echo $d->stok?></td>
-                                        <td><?php echo $d->gambar?></td>
+                                        <td>
+                                            <img src="<?php echo base_url(''.$d->gambar); ?>" alt="Gambar Produk"
+                                                width="100">
+                                        </td>
+
                                         <td><?php echo $d->createdAt?></td>
                                         <td><?php echo $d->updatedAt?></td>
-                                        <td><a href="#" class="btn btn-secondary">Detail</a></td>
+                                        <td>
+                                            <div class="buttons" class="row">
+                                                <a href="<?php echo base_url('edit_produk/'.$d->id_product)?>"
+                                                    class="btn icon btn-warning"><i class="fa fa-edit"></i>Edit</a>
+                                                <a href="<?php echo base_url('hapus_produk/'.$d->id_product)?>"
+                                                    onclick="return confirm('Anda yakin ingin menghapus produk ini?')"
+                                                    class="btn icon btn-danger"><i class="fa fa-trash"></i> Hapus</a>
+                                            </div>
+                                        </td>
                                     </tr>
                                     <?php endforeach; ?>
                                 </tbody>

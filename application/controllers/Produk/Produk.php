@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class List_Produk extends CI_Controller {
+class Produk extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -20,7 +20,6 @@ class List_Produk extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->model('M_Produk');
 		$data['product'] = $this->M_Produk->show_data();
 		$this->load->view('partials_admin/header',);
         $this->load->view('partials_admin/sidebar');
@@ -35,6 +34,31 @@ class List_Produk extends CI_Controller {
         $this->load->view('Produk/tambah_produk');
         $this->load->view('partials_admin/footer');
 	}
+	public function Edit_Produk($id)
+	{
+		$data['product'] = $this->M_Produk->edit_produk($id);
+		$this->load->view('partials_admin/header');
+		$this->load->view('partials_admin/sidebar');
+		$this->load->view('Produk/edit_produk', $data);
+		$this->load->view('partials_admin/footer');
+	}
+	
+	public function Hapus_Produk($id_product = null)
+	{
+    if($id_product == null){
+        redirect('list_produk');
+    }
+    $where = array('id_product' => $id_product);
+    $this->M_Produk->delete_data($where, 'product');
+    $this->session->set_flashdata('pesan','<div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <strong>Data berhasil dihapus !</strong>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>');
+    redirect('list_produk');
+	}
+
 
 	public function _rules()
 	{
@@ -84,5 +108,45 @@ class List_Produk extends CI_Controller {
 		  redirect('list_produk');
 		}
 	
+	}
+
+	public function update_data_aksi()
+	{
+		$this->_rules();
+		$id_product	  	  = $this->input->post('id_product');
+			$user_id 	 	  = $this->input->post('user_id');
+			$kategori 	 	  = $this->input->post('kategori');
+			$nama 	 	 	  = $this->input->post('nama');
+			$deskripsi 	 	  = $this->input->post('deskripsi');
+			$harga 	 	  = $this->input->post('harga');
+			$stok 	 	  = $this->input->post('stok');
+			$gambar 	 	  = $this->input->post('gambar');
+			$createdAt 	 	  = $this->input->post('createdAt');
+			$updatedAt 	 	  = $this->input->post('updatedAt');
+			$data = array(
+				'id_product'		=> $id_product,
+				'user_id'	=> $user_id,
+				'kategori'	=> $kategori,
+				'nama'	=> $nama,
+				'deskripsi'	=> $deskripsi,
+				'harga'	=> $harga,
+				'stok'	=> $stok,
+				'gambar'	=> $gambar,
+				'createdAt'	=> $createdAt,
+				'updatedAt'	=> $updatedAt,
+			);
+			
+			$where = array(
+				'id_product' => $id_product
+			);
+
+			$this->M_Produk->update_data('product', $data, $where);
+			$this->session->set_flashdata('pesan','<div class="alert alert-warning alert-dismissible fade show" role="alert">
+			<strong>Data berhasil diupdate !</strong>
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+			  <span aria-hidden="true">&times;</span>
+			</button>
+		  </div>');
+		  redirect('list_produk');
 	}
 }

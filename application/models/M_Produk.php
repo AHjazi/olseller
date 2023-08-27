@@ -16,6 +16,11 @@
         $this->db->insert($table,$data);
     }
 
+    public function edit_produk($id)
+{
+    return $this->db->get_where('product', ['id_product' => $id])->row_array();
+}
+
     public function update_data($table,$data,$where){
         $this->db->update($table,$data,$where);
     }
@@ -24,4 +29,5 @@
         $this->db->where($where);
         $this->db->delete($table);
     }
+
 	}

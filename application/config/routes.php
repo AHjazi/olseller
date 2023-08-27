@@ -54,16 +54,22 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 // Produk
-$route['add_product']= 'Produk/List_Produk/Tambah_Produk';
+$route['add_product']= 'Produk/Produk/Tambah_Produk';
 
 // Halaman Dashboard
 $route['dashboard']= 'Admin/Dashboard';
 
 // Halaman List Produk
-$route['list_produk']= 'Produk/List_Produk';
+$route['list_produk']= 'Produk/Produk';
 
 // Halaman Transaksi
 $route['transaksi']= 'Transaksi/Transaksi';
 
 // Halaman Customer
 $route['customer']= 'Customer/Customer';
+
+// Halaman Edit Produk
+$route['edit_produk/(:any)'] = 'Produk/Produk/Edit_Produk/$1';
+
+// Hapus Produk
+$route['hapus_produk/(:any)'] = 'Produk/Produk/Hapus_Produk/$1';

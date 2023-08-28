@@ -1,28 +1,27 @@
 <div class="footer_section layout_padding">
     <div class="container">
-        <div class="footer_logo"><a href="index.html"><img src="images/footer-logo.png"></a></div>
+        <div class="footer_logo"><a href=""><img src=""></a></div>
         <div class="input_bt">
-            <input type="text" class="mail_bt" placeholder="Your Email" name="Your Email">
-            <span class="subscribe_bt" id="basic-addon2"><a href="#">Subscribe</a></span>
+            <!-- <input type="text" class="" placeholder="" name="cs@mediacomputer.tech">
+            <span class="subscribe_bt" id="basic-addon2"><a href="#"></a></span> -->
         </div>
         <div class="footer_menu">
             <ul>
-                <li><a href="#">Best Sellers</a></li>
-                <li><a href="#">Gift Ideas</a></li>
-                <li><a href="#">New Releases</a></li>
-                <li><a href="#">Today's Deals</a></li>
-                <li><a href="#">Customer Service</a></li>
+                <li><a href="<?= base_url('produk')?>">Produk</a></li>
+                <li><a href="<?= base_url('layanan')?>">Layanan</a></li>
+                <li><a href="<?= base_url('harga')?>">Harga</a></li>
+                <li><a href="<?= base_url('support')?>">Support</a></li>
+                <li><a href="<?= base_url('customer_service')?>">Customer Service</a></li>
             </ul>
         </div>
-        <div class="location_main">Help Line Number : <a href="#">+1 1800 1200 1200</a></div>
+        <div class="location_main">Contact Person : <a href="#">+62-821-5423-1513</a></div>
     </div>
 </div>
 <!-- footer section end -->
 <!-- copyright section start -->
 <div class="copyright_section">
     <div class="container">
-        <p class="copyright_text">© 2020 All Rights Reserved. Design by <a href="https://html.design">Free html
-                Templates</a></p>
+        <p class="copyright_text">© 2023 All Rights Reserved. Design by <a href="https://mediacomputer.tech">MediaComputer.Tech</a></p>
     </div>
 </div>
 <!-- copyright section end -->

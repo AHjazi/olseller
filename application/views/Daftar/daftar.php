@@ -38,7 +38,7 @@
     <section class="section">
         <div class="container mt-5">
             <div class="row">
-                <div class="col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-6 offset-lg-3 col-xl-4 offset-xl-4">
+                <div class="col-12">
                     <div class="login-brand">
                         <img src="assets/images/landing.png" alt="logo" width="200" height="200" class="shadow-light rounded-circle mb-3">
                         <br>
@@ -47,46 +47,69 @@
 
                     <div class="card card-warning">
                         <div class="card-header">
-                            <h4>Silakan Masuk dengan Akun Olseller Anda!</h4>
+                            <h3>Silahkan Daftar Sekarang!</h3>
                             </div>
                             
                         <div class="card-body">
-                            <form id="login-form" novalidate="">
+                            <form method="POST" action="<?php echo base_url('LandingPage/tambah_data'); ?>">
                                 <div class="form-group">
-                                    <label for="email">Email</label>
-                                    <input id="email" type="email" class="form-control" name="email" tabindex="1"
+                                    <label for="email">Nama</label>
+                                    <input type="text" class="form-control" name="nama" tabindex="1"required autofocus>
+                                    <div class="invalid-feedback">
+                                        Harap isi nama anda!
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Alamat</label>
+                                    <input type="text" class="form-control" name="alamat" tabindex="1"
                                         required autofocus>
                                     <div class="invalid-feedback">
-                                        Please fill in your email
+                                        Harap isi alamat anda!
                                     </div>
                                 </div>
-
                                 <div class="form-group">
-                                    <div class="d-block">
-                                        <label for="password" class="control-label">Password</label>
-                                        <div class="float-right">
-                                            <a href="auth-forgot-password.html" class="text-small">
-                                                Forgot Password?
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <input id="password" type="password" class="form-control" name="password"
-                                        required>
+                                    <label for="email">Nama Usaha</label>
+                                    <input type="text" class="form-control" name="nama_usaha" tabindex="1"
+                                        required autofocus>
                                     <div class="invalid-feedback">
-                                        please fill in your password
+                                        Harap isi nama usaha anda!
                                     </div>
                                 </div>
-
                                 <div class="form-group">
-                                    <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" name="remember" class="custom-control-input" tabindex="3"
-                                            id="remember-me">
-                                        <label class="custom-control-label" for="remember-me">Remember Me</label>
+                                    <label for="email">Jenis Usaha</label>
+                                    <input type="text" class="form-control" name="jenis_usaha" tabindex="1"
+                                        required autofocus>
+                                    <div class="invalid-feedback">
+                                        Harap isi jenis usaha anda!
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Lokasi Usaha</label>
+                                    <input type="text" class="form-control" name="lokasi_usaha" tabindex="1"
+                                        required autofocus>
+                                    <div class="invalid-feedback">
+                                        Harap isi lokasi usaha anda!
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">No Hp</label>
+                                    <input type="text" class="form-control" name="no_hp" tabindex="1"
+                                        required autofocus>
+                                    <div class="invalid-feedback">
+                                        Harap isi no hp anda!
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="text" class="form-control" name="email" tabindex="1"
+                                        required autofocus>
+                                    <div class="invalid-feedback">
+                                        Harap isi email anda!
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <button type="submit" class="btn btn-warning btn-lg btn-block" tabindex="4">
-                                        Login
+                                        Daftar
                                     </button>
                                 </div>
                             </form>
@@ -109,57 +132,7 @@
             <!-- Page Specific JS File -->
 
             <!-- Template JS File -->
-            <!-- <script src="<?= base_url();?>assets_admin/js/scripts.js"></script>
-            <script src="<?= base_url();?>assets_admin/js/custom.js"></script> -->
-<script>
-document.getElementById('login-form').addEventListener('submit', function(event) {
-    event.preventDefault();
-
-    const email = document.getElementById('email').value;
-    const password = document.getElementById('password').value;
-
-    const requestData = {
-        email: email,
-        password: password
-    };
-
-    fetch('https://couplemoment.com/user/login', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(requestData)
-    })
-    .then(response => response.json())
-    .then(data => {
-        if (data.status === 'success') {
-            console.log('Login successful');
-            const token = data.data.token;
-            const name = data.data.name; // Mengambil data "name" dari respons
-            const user_id = data.data.user_id; // Mengambil data "user_id" dari respons
-            sessionStorage.setItem('token', token);
-            sessionStorage.setItem('user_id', user_id); // Simpan user_id dalam sesi
-            window.location.href = 'Admin/dashboard';
-
-            // Tambahkan kode berikut untuk menampilkan nama pengguna dalam elemen HTML
-            const nameElement = document.querySelector('.d-sm-none.d-lg-inline-block');
-            if (nameElement) {
-                nameElement.textContent = `Hi, ${name}`;
-            }
-        } else {
-            console.log('Login failed:', data.message);
-            window.location.href = 'Admin/login';
-        }
-    })
-    .catch(error => {
-        console.error('Error:', error);
-    });
-});
-</script>
-
-            
-<script>
-    
-</script>
-</body>
+            <script src="<?= base_url();?>assets_admin/js/scripts.js"></script>
+            <script src="<?= base_url();?>assets_admin/js/custom.js"></script>
+<</body>
 </html>

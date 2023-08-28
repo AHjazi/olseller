@@ -76,3 +76,17 @@ $route['hapus_produk/(:any)'] = 'Produk/Produk/Hapus_Produk/$1';
 
 // Tampilan Login
 $route['login']= 'Login/Login';
+
+// Proses Login
+$route['do_login']= 'Login/Login/Process_Login';
+
+// Landing
+$route['produk']= 'LandingPage/produk';
+$route['layanan']= 'LandingPage/layanan';
+$route['harga']= 'LandingPage/harga';
+$route['support']= 'LandingPage/support';
+$route['customer_service']= 'LandingPage/customer_service';
+
+// Daftar
+$route['daftar']= 'LandingPage/daftar';
+$route['tambah_daftar']= 'LandingPage/tambah_data';

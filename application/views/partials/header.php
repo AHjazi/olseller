@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <!-- site metas -->
-    <title>Eflyer</title>
+    <title><?= $title?></title>
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -22,7 +22,7 @@
     <!-- Responsive-->
     <link rel="stylesheet" href="<?= base_url();?>assets/css/responsive.css">
     <!-- fevicon -->
-    <link rel="icon" href="<?= base_url();?>assets/images/fevicon.png" type="image/gif" />
+     <link rel="icon" href="<?= base_url('assets/images/landing.png') ?>" type="image/x-icon">
     <!-- Scrollbar Custom CSS -->
     <link rel="stylesheet" href="<?= base_url();?>assets/css/jquery.mCustomScrollbar.min.css">
     <!-- Tweaks for older IEs-->
@@ -43,7 +43,6 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>PolluxUI Admin</title>
     <!-- base:css -->
     <link rel="stylesheet" href="<?= base_url();?>assets/teemplate/vendors/typicons/typicons.css">
     <link rel="stylesheet" href="<?= base_url();?>assets/teemplate/vendors/css/vendor.bundle.base.css">
@@ -61,27 +60,4 @@
 </head>
 
 <body>
-    <!-- banner bg main start -->
-    <div class="banner_bg_main">
-        <!-- header top section start -->
-        <div class="container">
-            <div class="header_section_top">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="custom_menu">
-                            <ul>
-                                <li><a href="#">Produk</a></li>
-                                <li><a href="#">Layanan</a></li>
-                                <li><a href="#">Harga</a></li>
-                                <li><a href="#">Support</a></li>
-                                <li><a href="#">Customer Service</a></li>
-                                 <div class="header_box">
-                        <div class="lang_box ">
-                        <a href="<?php echo base_url('dashboard'); ?>" title="Login" class="nav-link" aria-expanded="true">
-    Login
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+ 

@@ -31,34 +31,7 @@
 <!-- Template JS File -->
 <script src="<?= base_url();?>assets_admin/js/scripts.js"></script>
 <script src="<?= base_url();?>assets_admin/js/custom.js"></script>
-<script>
-$(document).ready(function() {
-    var dataTable = $('#data_table').DataTable({
-        "ajax": {
-            "url": "<?php echo base_url('Produk/Produk/get_data'); ?>",
-            "type": "POST",
-            "data": function(d) {
-                d.start_date = $('#start_date').val();
-                d.end_date = $('#end_date').val();
-            }
-        },
-        "columns": [{
-                "data": "id"
-            },
-            {
-                "data": "name"
-            },
-            {
-                "data": "date"
-            }
-        ]
-    });
 
-    $('#filter').click(function() {
-        dataTable.ajax.reload();
-    });
-});
-</script>
 
 <script>
 document.getElementById("exportToPdfBtn").addEventListener("click", function() {

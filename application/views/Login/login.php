@@ -123,7 +123,7 @@ document.getElementById('login-form').addEventListener('submit', function(event)
         password: password
     };
 
-    fetch('http://localhost:4000/user/login', {
+    fetch('https://couplemoment.com/user/login', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

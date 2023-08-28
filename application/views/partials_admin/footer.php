@@ -42,7 +42,7 @@
         user_id: user_id
     };
 
-    fetch('http://localhost:4000/user/logout', {
+    fetch('https://couplemoment.com/user/logout', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',

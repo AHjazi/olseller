@@ -89,4 +89,4 @@ $route['customer_service']= 'LandingPage/customer_service';
 
 // Daftar
 $route['daftar']= 'LandingPage/daftar';
-$route['tambah_daftar']= 'LandingPage/tambah';
+$route['tambah_daftar']= 'LandingPage/tambah_data';

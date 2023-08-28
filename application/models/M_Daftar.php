@@ -1,7 +1,15 @@
 <?php
-class M_Daftar extends CI_Model {
-    public function insert_data($data) {
-        return $this->db->insert('member', $data);
+    defined('BASEPATH') OR exit('No direct script access allowed');
+class M_Daftar extends CI_Model 
+{
+    public function __construct()
+    {
+        parent::__construct();
+    }
+    
+    public function insert_data($data,$table)
+    {
+        $this->db->insert($table,$data);
     }
 }
 ?>

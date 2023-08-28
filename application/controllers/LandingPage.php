@@ -28,7 +28,7 @@ class LandingPage extends CI_Controller {
 	}
 	public function produk()
 	{
-		$data['title'] = "Olseller | Welcome";
+		$data['title'] = "Olseller | Produk";
 		$this->load->view('partials/header', $data);
         $this->load->view('partials/sidebar');
         $this->load->view('Landing_Page/Produk/produk');
@@ -36,7 +36,7 @@ class LandingPage extends CI_Controller {
 	}
 	public function layanan()
 	{
-		$data['title'] = "Olseller | Welcome";
+		$data['title'] = "Olseller | Layanan";
 		$this->load->view('partials/header', $data);
         $this->load->view('partials/sidebar');
         $this->load->view('Landing_Page/Produk/layanan');
@@ -44,7 +44,7 @@ class LandingPage extends CI_Controller {
 	}
 	public function harga()
 	{
-		$data['title'] = "Olseller | Welcome";
+		$data['title'] = "Olseller | Harga";
 		$this->load->view('partials/header', $data);
         $this->load->view('partials/sidebar');
         $this->load->view('Landing_Page/Produk/harga');
@@ -52,7 +52,7 @@ class LandingPage extends CI_Controller {
 	}
 	public function support()
 	{
-		$data['title'] = "Olseller | Welcome";
+		$data['title'] = "Olseller | Support";
 		$this->load->view('partials/header', $data);
         $this->load->view('partials/sidebar');
         $this->load->view('Landing_Page/Produk/support');
@@ -60,7 +60,7 @@ class LandingPage extends CI_Controller {
 	}
 	public function customer_service()
 	{
-		$data['title'] = "Olseller | Welcome";
+		$data['title'] = "Olseller | Customer Service";
 		$this->load->view('partials/header', $data);
         $this->load->view('partials/sidebar');
         $this->load->view('Landing_Page/Produk/customer_service');
@@ -68,33 +68,34 @@ class LandingPage extends CI_Controller {
 	}
 	public function daftar()
 	{
-		$data['title'] = "Olseller | Welcome";
+		$data['title'] = "Olseller | Daftar";
 		$this->load->view('partials/header', $data);
         $this->load->view('Daftar/daftar');
-        // $this->load->view('partials/footer');
 	}
 
-	public function tambah() {
-        // Ambil data dari input form (gantikan ini dengan metode sesuai dengan CI3 Anda)
-        $data = array(
-            'id_member' => $this->input->post('id_member'), // Sesuaikan dengan mekanisme ID yang Anda gunakan
-            'nama' => $this->input->post('nama'),
-            'alamat' => $this->input->post('alamat'),
-            'nama_usaha' => $this->input->post('nama_usaha'),
-            'jenis_usaha' => $this->input->post('jenis_usaha'),
-            'lokasi_usaha' => $this->input->post('lokasi_usaha'),
-            'no_hp' => $this->input->post('no_hp'),
-            'email' => $this->input->post('email')
+	public function tambah_data() 
+	{
+		$id_member = $this->input->post('id_member');
+		$nama = $this->input->post('nama');
+		$alamat = $this->input->post('alamat');
+		$nama_usaha = $this->input->post('nama_usaha');
+		$jenis_usaha = $this->input->post('jenis_usaha');
+		$lokasi_usaha = $this->input->post('lokasi_usaha');
+		$no_hp = $this->input->post('no_hp');
+		$email = $this->input->post('email');
+		
+		$data = array(
+			'nama' => $nama,
+			'alamat' => $alamat,
+			'nama_usaha' => $nama_usaha,
+			'jenis_usaha' => $jenis_usaha,
+			'lokasi_usaha' => $lokasi_usaha,
+			'no_hp' => $no_hp,
+			'email' => $email
         );
 
-        // Panggil model untuk menambahkan data
-        $result = $this->M_Daftar->insert_data($data);
+		$result= $this->M_Daftar->insert_data($data,'member');
 
-        if ($result) {
-           redirect('dashboard');
-        } else {
-			
-        
-        }
-    }
+		redirect('LandingPage');
+		}
 }

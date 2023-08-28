@@ -51,66 +51,62 @@
                             </div>
                             
                         <div class="card-body">
-                            <form method="POST" action="<?php base_url('tambah_daftar')?>" novalidate="">
-                            <input id="email" type="hidden" class="form-control" name="id_member" tabindex="1"
-                                        required autofocus>
+                            <form method="POST" action="<?php echo base_url('LandingPage/tambah_data'); ?>">
                                 <div class="form-group">
                                     <label for="email">Nama</label>
-                                    <input id="email" type="text" class="form-control" name="nama" tabindex="1"
-                                        required autofocus>
+                                    <input type="text" class="form-control" name="nama" tabindex="1"required autofocus>
                                     <div class="invalid-feedback">
-                                        Please fill in your email
+                                        Harap isi nama anda!
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="email">Alamat</label>
-                                    <input id="email" type="text" class="form-control" name="alamat" tabindex="1"
+                                    <input type="text" class="form-control" name="alamat" tabindex="1"
                                         required autofocus>
                                     <div class="invalid-feedback">
-                                        Please fill in your email
+                                        Harap isi alamat anda!
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="email">Nama Usaha</label>
-                                    <input id="email" type="text" class="form-control" name="nama_usaha" tabindex="1"
+                                    <input type="text" class="form-control" name="nama_usaha" tabindex="1"
                                         required autofocus>
                                     <div class="invalid-feedback">
-                                        Please fill in your email
+                                        Harap isi nama usaha anda!
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="email">Jenis Usaha</label>
-                                    <input id="email" type="text" class="form-control" name="jenis_usaha" tabindex="1"
+                                    <input type="text" class="form-control" name="jenis_usaha" tabindex="1"
                                         required autofocus>
                                     <div class="invalid-feedback">
-                                        Please fill in your email
+                                        Harap isi jenis usaha anda!
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="email">Lokasi Usaha</label>
-                                    <input id="email" type="text" class="form-control" name="lokasi_usaha" tabindex="1"
+                                    <input type="text" class="form-control" name="lokasi_usaha" tabindex="1"
                                         required autofocus>
                                     <div class="invalid-feedback">
-                                        Please fill in your email
+                                        Harap isi lokasi usaha anda!
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="email">No Hp</label>
-                                    <input id="email" type="text" class="form-control" name="no_hp" tabindex="1"
+                                    <input type="text" class="form-control" name="no_hp" tabindex="1"
                                         required autofocus>
                                     <div class="invalid-feedback">
-                                        Please fill in your email
+                                        Harap isi no hp anda!
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="email">Email</label>
-                                    <input id="email" type="text" class="form-control" name="email" tabindex="1"
+                                    <input type="text" class="form-control" name="email" tabindex="1"
                                         required autofocus>
                                     <div class="invalid-feedback">
-                                        Please fill in your email
+                                        Harap isi email anda!
                                     </div>
                                 </div>
-
                                 <div class="form-group">
                                     <button type="submit" class="btn btn-warning btn-lg btn-block" tabindex="4">
                                         Daftar
@@ -136,57 +132,7 @@
             <!-- Page Specific JS File -->
 
             <!-- Template JS File -->
-            <!-- <script src="<?= base_url();?>assets_admin/js/scripts.js"></script>
-            <script src="<?= base_url();?>assets_admin/js/custom.js"></script> -->
-<script>
-document.getElementById('login-form').addEventListener('submit', function(event) {
-    event.preventDefault();
-
-    const email = document.getElementById('email').value;
-    const password = document.getElementById('password').value;
-
-    const requestData = {
-        email: email,
-        password: password
-    };
-
-    fetch('https://couplemoment.com/user/login', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(requestData)
-    })
-    .then(response => response.json())
-    .then(data => {
-        if (data.status === 'success') {
-            console.log('Login successful');
-            const token = data.data.token;
-            const name = data.data.name; // Mengambil data "name" dari respons
-            const user_id = data.data.user_id; // Mengambil data "user_id" dari respons
-            sessionStorage.setItem('token', token);
-            sessionStorage.setItem('user_id', user_id); // Simpan user_id dalam sesi
-            window.location.href = 'Admin/dashboard';
-
-            // Tambahkan kode berikut untuk menampilkan nama pengguna dalam elemen HTML
-            const nameElement = document.querySelector('.d-sm-none.d-lg-inline-block');
-            if (nameElement) {
-                nameElement.textContent = `Hi, ${name}`;
-            }
-        } else {
-            console.log('Login failed:', data.message);
-            window.location.href = 'Admin/login';
-        }
-    })
-    .catch(error => {
-        console.error('Error:', error);
-    });
-});
-</script>
-
-            
-<script>
-    
-</script>
-</body>
+            <script src="<?= base_url();?>assets_admin/js/scripts.js"></script>
+            <script src="<?= base_url();?>assets_admin/js/custom.js"></script>
+<</body>
 </html>

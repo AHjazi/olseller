@@ -1,8 +1,8 @@
 <div class="footer_section layout_padding">
     <div class="container">
-        <div class="footer_logo"><a href="index.html"><img src=""></a></div>
+        <div class="footer_logo"><a href="mediacomputer.tech"><img src=""></a></div>
         <div class="input_bt">
-            <input type="text" class="mail_bt" placeholder="cs@mediacomputer.tech" name="cs@mediacomputer.tech">
+            <input type="text" class="mediacomputer.tech" placeholder="cs@mediacomputer.tech" name="cs@mediacomputer.tech">
             <span class="subscribe_bt" id="basic-addon2"><a href="#"></a></span>
         </div>
         <div class="footer_menu">
@@ -21,7 +21,7 @@
 <!-- copyright section start -->
 <div class="copyright_section">
     <div class="container">
-        <p class="copyright_text">© 2020 All Rights Reserved. Design by <a href="https://html.design">MediaComputer.Tech</a></p>
+        <p class="copyright_text">© 2023 All Rights Reserved. Design by <a href="https://mediacomputer.tech">MediaComputer.Tech</a></p>
     </div>
 </div>
 <!-- copyright section end -->

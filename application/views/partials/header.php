@@ -71,11 +71,11 @@
                             <ul>
                             <li><span class="toggle_icon" onclick="openNav()"><img src="assets/images/toggle-icon.png" width="20px" height="10px"></span>
                             </li>    
-                            <li><a href="#">Produk</a></li>
-                                <li><a href="#">Layanan</a></li>
-                                <li><a href="#">Harga</a></li>
-                                <li><a href="#">Support</a></li>
-                                <li><a href="#">Customer Service</a></li>
+                            <li><a href="<?= base_url('produk')?>">produk</a></li>
+                                <li><a href="<?= base_url('produk')?>">Layanan</a></li>
+                                <li><a href="<?= base_url('produk')?>">harga</a></li>
+                                <li><a href="<?= base_url('produk')?>">support</a></li>
+                                <li><a href="<?= base_url('produk')?>">customer_service</a></li>
                             </ul>
                         </div>
                     </div>

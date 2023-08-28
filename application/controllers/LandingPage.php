@@ -26,4 +26,44 @@ class LandingPage extends CI_Controller {
         $this->load->view('landing');
         $this->load->view('partials/footer');
 	}
+	public function produk()
+	{
+		$data['title'] = "Olseller | Welcome";
+		$this->load->view('partials/header', $data);
+        $this->load->view('partials/sidebar');
+        $this->load->view('Landing_Page/Produk/produk');
+        $this->load->view('partials/footer');
+	}
+	public function layanan()
+	{
+		$data['title'] = "Olseller | Welcome";
+		$this->load->view('partials/header', $data);
+        $this->load->view('partials/sidebar');
+        $this->load->view('Landing_Page/Produk/layanan');
+        $this->load->view('partials/footer');
+	}
+	public function harga()
+	{
+		$data['title'] = "Olseller | Welcome";
+		$this->load->view('partials/header', $data);
+        $this->load->view('partials/sidebar');
+        $this->load->view('Landing_Page/Produk/harga');
+        $this->load->view('partials/footer');
+	}
+	public function support()
+	{
+		$data['title'] = "Olseller | Welcome";
+		$this->load->view('partials/header', $data);
+        $this->load->view('partials/sidebar');
+        $this->load->view('Landing_Page/Produk/support');
+        $this->load->view('partials/footer');
+	}
+	public function customer_service()
+	{
+		$data['title'] = "Olseller | Welcome";
+		$this->load->view('partials/header', $data);
+        $this->load->view('partials/sidebar');
+        $this->load->view('Landing_Page/Produk/customer_service');
+        $this->load->view('partials/footer');
+	}
 }

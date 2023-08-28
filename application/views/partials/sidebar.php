@@ -4,11 +4,11 @@
         <div class="containt_main">
                     <div id="mySidenav" class="sidenav">
                         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                        <a href="index.html">Produk</a>
-                        <a href="fashion.html">Layanan</a>
-                        <a href="electronic.html">Harga</a>
-                        <a href="add_product.php">Support</a>
-                        <a href="#">Customer Service</a>
+                        <a href="<?= base_url('produk')?>">Produk</a>
+                        <a href="<?= base_url('produk')?>">Layanan</a>
+                        <a href="<?= base_url('produk')?>">Harga</a>
+                        <a href="<?= base_url('produk')?>">Support</a>
+                        <a href="<?= base_url('produk')?>">Customer Service</a>
                     </div>
                     <div class="dropdown">
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">

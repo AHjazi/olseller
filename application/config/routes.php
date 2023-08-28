@@ -79,3 +79,18 @@ $route['login']= 'Login/Login';
 
 // Proses Login
 $route['do_login']= 'Login/Login/Process_Login';
+
+// Landing
+$route['produk']= 'LandingPage/produk';
+
+// Landing
+$route['produk']= 'LandingPage/layanan';
+
+// Landing
+$route['produk']= 'LandingPage/harga';
+
+// Landing
+$route['produk']= 'LandingPage/support';
+
+// Landing
+$route['produk']= 'LandingPage/customer_service';

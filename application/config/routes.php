@@ -73,3 +73,6 @@ $route['edit_produk/(:any)'] = 'Produk/Produk/Edit_Produk/$1';
 
 // Hapus Produk
 $route['hapus_produk/(:any)'] = 'Produk/Produk/Hapus_Produk/$1';
+
+// Tampilan Login
+$route['login']= 'Login/Login';

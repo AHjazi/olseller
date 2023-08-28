@@ -1,6 +1,7 @@
 <footer class="main-footer">
     <div class="footer-left">
-        Copyright &copy; 2018 <div class="bullet"></div> Design By <a href="https://nauval.in/">Muhamad Nauval Azhar</a>
+        Copyright &copy; 2023 <div class="bullet"></div> Design By <a href="https://mediacomputer.tech/">Media
+            Computer.Tech</a>
     </div>
     <div class="footer-right">
 
@@ -18,13 +19,55 @@
 <script src="<?= base_url();?>assets_admin/modules/moment.min.js"></script>
 <script src="<?= base_url();?>assets_admin/js/stisla.js"></script>
 
+
 <!-- JS Libraies -->
-
+<script src="<?= base_url();?>assets_admin/modules/datatables/datatables.min.js"></script>
+<script src="<?= base_url();?>assets_admin/modules/datatables/DataTables-1.10.16/js/dataTables.bootstrap4.min.js">
+</script>
+<script src="<?= base_url();?>assets_admin/modules/datatables/Select-1.2.4/js/dataTables.select.min.js"></script>
+<script src="<?= base_url();?>assets_admin/modules/jquery-ui/jquery-ui.min.js"></script>
 <!-- Page Specific JS File -->
-
+<script src="base_url();?>assets_admin/js/page/modules-datatables.js"></script>
 <!-- Template JS File -->
 <script src="<?= base_url();?>assets_admin/js/scripts.js"></script>
 <script src="<?= base_url();?>assets_admin/js/custom.js"></script>
+<script>
+$(document).ready(function() {
+    var dataTable = $('#data_table').DataTable({
+        "ajax": {
+            "url": "<?php echo base_url('Produk/Produk/get_data'); ?>",
+            "type": "POST",
+            "data": function(d) {
+                d.start_date = $('#start_date').val();
+                d.end_date = $('#end_date').val();
+            }
+        },
+        "columns": [{
+                "data": "id"
+            },
+            {
+                "data": "name"
+            },
+            {
+                "data": "date"
+            }
+        ]
+    });
+
+    $('#filter').click(function() {
+        dataTable.ajax.reload();
+    });
+});
+</script>
+
+<script>
+document.getElementById("exportToPdfBtn").addEventListener("click", function() {
+    // Change the form action to point to the Export_pdf controller
+    document.getElementById("exportForm").action = "<?php echo base_url('Export_pdf'); ?>";
+    // Submit the form
+    document.getElementById("exportForm").submit();
+});
+</script>
 </body>
 
 </html>

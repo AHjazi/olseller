@@ -6,3 +6,26 @@
  */
 
 "use strict";
+
+// DATA TABLES
+$(document).ready(function () {
+    var dataTable = $('#data_table').DataTable({
+        "ajax": {
+            "url": "<?php echo base_url('Produk/Produk/get_data'); ?>",
+            "type": "POST",
+            "data": function (d) {
+                d.start_date = $('#start_date').val();
+                d.end_date = $('#end_date').val();
+            }
+        },
+        "columns": [
+            { "data": "id" },
+            { "data": "name" },
+            { "data": "date" }
+        ]
+    });
+
+    $('#filter').click(function () {
+        dataTable.ajax.reload();
+    });
+});

@@ -12,7 +12,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <!-- CSS Libraries -->
-
+    <link rel="stylesheet" href="<?= base_url();?>assets_admin/modules/datatables/datatables.min.css">
+    <link rel="stylesheet"
+        href="<?= base_url();?>assets_admin/modules/datatables/DataTables-1.10.16/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet"
+        href="<?= base_url();?>assets_admin/modules/datatables/Select-1.2.4/css/select.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
     <!-- Template CSS -->
     <link rel="stylesheet" href="<?= base_url();?>assets_admin/css/style.css">
     <link rel="stylesheet" href="<?= base_url();?>assets_admin/css/components.css">

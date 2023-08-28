@@ -21,7 +21,7 @@
                     </div>
                     <div class="card-body p-0">
                         <div class="table-responsive">
-                            <table class="table table-striped" id="sortable-table">
+                            <table class="table table-striped" id="tabel">
                                 <thead>
                                     <tr>
                                         <th class="text-center">

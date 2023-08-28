@@ -15,15 +15,17 @@
                                     <div class="input-group-btn">
                                         <button class="btn btn-primary"><i class="fas fa-search"></i></button>
                                     </div>
+
                                 </div>
                             </form>
                         </div>
                     </div>
                     <div class="card-body p-0">
                         <div class="table-responsive">
-                            <table class="table table-striped" id="sortable-table">
+                            <table class="table table-striped" id="data_table">
                                 <thead>
                                     <tr>
+
                                         <th class="text-center">
                                             <i class="fas fa-th"></i>
                                         </th>

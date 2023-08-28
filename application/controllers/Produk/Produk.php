@@ -149,4 +149,11 @@ class Produk extends CI_Controller {
 		  </div>');
 		  redirect('list_produk');
 	}
+	public function get_data() {
+        $start_date = $this->input->post('start_date');
+        $end_date = $this->input->post('end_date');
+
+        $data = $this->data_model->get_filtered_data($start_date, $end_date);
+        echo json_encode($data);
+    }
 }

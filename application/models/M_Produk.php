@@ -40,4 +40,14 @@
         return $jumlah;
     }
 
+    public function get_filtered_data($start_date, $end_date) {
+        $this->db->select('*');
+        $this->db->from('product'); // Ganti dengan nama tabel yang sesuai
+        $this->db->where('date_column >=', $start_date);
+        $this->db->where('date_column <=', $end_date);
+        $query = $this->db->get();
+
+        return $query->result();
+    }
+
 	}

@@ -25,6 +25,52 @@
 <!-- Template JS File -->
 <script src="<?= base_url();?>assets_admin/js/scripts.js"></script>
 <script src="<?= base_url();?>assets_admin/js/custom.js"></script>
+<!-- LOGUT-->
+<script>
+    document.getElementById('logout-link').addEventListener('click', function(event) {
+    event.preventDefault();
+
+    const token = getTokenFromSession(); // Fungsi untuk mengambil token dari sesi
+    const user_id = getUserIdFromSession(); // Fungsi untuk mengambil user_id dari sesi
+
+    if (!token) {
+        console.error('Token is missing');
+        return;
+    }
+
+    const requestData = {
+        user_id: user_id
+    };
+
+    fetch('http://localhost:4000/user/logout', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${token}` // Sertakan token dalam header Authorization
+        },
+        body: JSON.stringify(requestData)
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log('Logout successful:', data.message);
+        window.location.href = '<?= base_url('login'); ?>';
+    })
+    .catch(error => {
+        console.error('Error:', error);
+    });
+});
+
+function getTokenFromSession() {
+    // Implementasikan cara Anda mengambil token dari sesi atau local storage
+    return sessionStorage.getItem('token');
+}
+
+function getUserIdFromSession() {
+    // Implementasikan cara Anda mengambil user_id dari sesi atau elemen tersembunyi
+    return sessionStorage.getItem('user_id');
+}
+
+</script>
 </body>
 
 </html>

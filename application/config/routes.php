@@ -76,3 +76,6 @@ $route['hapus_produk/(:any)'] = 'Produk/Produk/Hapus_Produk/$1';
 
 // Tampilan Login
 $route['login']= 'Login/Login';
+
+// Proses Login
+$route['do_login']= 'Login/Login/Process_Login';

@@ -1,21 +1,16 @@
-        <!-- logo section end -->
-        <!-- header section start -->
-        <div class="header_section">
-            <div class="container">
-                <div class="containt_main">
+<!-- header section start -->
+<div class="header_section">
+    <div class="container">
+        <div class="containt_main">
                     <div id="mySidenav" class="sidenav">
                         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                         <a href="index.html">Produk</a>
                         <a href="fashion.html">Layanan</a>
                         <a href="electronic.html">Harga</a>
                         <a href="add_product.php">Support</a>
-                        <a href="<?php echo base_url('tambah_produk')?>">Customer Service</a>
+                        <a href="#">Customer Service</a>
                     </div>
-                    <span class="toggle_icon" onclick="openNav()"><img src="assets/images/toggle-icon.png"></span>
                     <div class="dropdown">
-                        <!-- <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All Category
-                        </button> -->
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                             <a class="dropdown-item" href="#">Action</a>
                             <a class="dropdown-item" href="#">Another action</a>
@@ -23,88 +18,27 @@
                         </div>
                     </div>
                     <div class="main">
-                        <!-- Another variation with a button -->
-                        <!-- <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Search this blog">
-                            <div class="input-group-append">
-                                <button class="btn btn-secondary" type="button"
-                                    style="background-color: #f26522; border-color:#f26522 ">
-                                    <i class="fa fa-search"></i>
-                                </button>
-                            </div>
-                        </div> -->
-                    </div>
-                    <div class="header_box">
-                        <div class="lang_box ">
-                        <!-- <a href="<?php echo base_url('dashboard'); ?>" title="Login" class="nav-link" aria-expanded="true">
-    Login -->
-</a>
-                            <!-- <div class="dropdown-menu ">
-                                <a href="#" class="dropdown-item">
-                                    <img src="images/flag-france.png" class="mr-2" alt="flag">
-                                    French
-                                </a>
-                            </div> -->
-                        </div>
-                        <div class="login_menu">
-                            <ul>
-                                <!-- <li><a href="#">
-                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                                        <span class="padding_10">Cart</span></a>
-                                </li> -->
-                                <!-- <li><a href="#">
-                                        <i class="fa fa-user" aria-hidden="true"></i>
-                                        <span class="padding_10">Cart</span></a>
-                                </li> -->
-                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-
         <!-- header section end -->
         <!-- banner section start -->
-        <div class="banner_section layout_padding">
+        <div class="banner_section layout_padding m-5">
             <div class="container">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="row">
-                                <div class="col-sm-12">
-                                    <h1 class="banner_taital">Ayo Mulai <br>Bisnis Mudah Dengan Olseller</h1>
-                                    <div class="row">
-                                    <div class="buynow_bt"><a href="#">Daftar Sekarang</a></div>
-                                    <div class="buynow_bt"><a href="#"<?php echo base_url('dashboard'); ?>" title="Login" class="nav-link" aria-expanded="true">
-    Login
-                                </div>                                    
-                            </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="row">
-                                <div class="col-sm-12">
-                                    <h1 class="banner_taital">Get Start <br>Your favriot shoping</h1>
-                                    <div class="buynow_bt"><a href="#">Buy Now</a></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="row">
-                                <div class="col-sm-12">
-                                    <h1 class="banner_taital">Get Start <br>Your favriot shoping</h1>
-                                    <div class="buynow_bt"><a href="#">Buy Now</a></div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-sm-12 mb-3">
+                                <h1 class="banner_taital">Ayo Mulai<br>Bisnis Mudah Dengan Olseller</h1>
+                                <div class="row">
+                                    <div class="buynow_bt" ><a href="#">Daftar Sekarang</a></div>
+                                    <div class="buynow_bt" style="margin-left: 10px;"><a href="<?php echo base_url('login'); ?>" title="Login" class="nav-link" aria-expanded="true">Login</a></div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <a class="carousel-control-prev" href="#my_slider" role="button" data-slide="prev">
-                        <i class="fa fa-angle-left"></i>
-                    </a>
-                    <a class="carousel-control-next" href="#my_slider" role="button" data-slide="next">
-                        <i class="fa fa-angle-right"></i>
-                    </a>
                 </div>
             </div>
         </div>
-        <!-- banner section end -->
-        </div>
+    </div>

@@ -20,7 +20,8 @@ class LandingPage extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('partials/header',);
+		$data['title'] = "Olseller | Welcome";
+		$this->load->view('partials/header', $data);
         $this->load->view('partials/sidebar');
         $this->load->view('landing');
         $this->load->view('partials/footer');

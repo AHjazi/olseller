@@ -1,17 +1,17 @@
 <div class="footer_section layout_padding">
     <div class="container">
-        <div class="footer_logo"><a href="mediacomputer.tech"><img src=""></a></div>
+        <div class="footer_logo"><a href=""><img src=""></a></div>
         <div class="input_bt">
-            <input type="text" class="mediacomputer.tech" placeholder="cs@mediacomputer.tech" name="cs@mediacomputer.tech">
-            <span class="subscribe_bt" id="basic-addon2"><a href="#"></a></span>
+            <!-- <input type="text" class="" placeholder="" name="cs@mediacomputer.tech">
+            <span class="subscribe_bt" id="basic-addon2"><a href="#"></a></span> -->
         </div>
         <div class="footer_menu">
             <ul>
-                <li><a href="#">Best Sellers</a></li>
-                <li><a href="#">Gift Ideas</a></li>
-                <li><a href="#">New Releases</a></li>
-                <li><a href="#">Today's Deals</a></li>
-                <li><a href="#">Customer Service</a></li>
+                <li><a href="<?= base_url('produk')?>">Produk</a></li>
+                <li><a href="<?= base_url('layanan')?>">Layanan</a></li>
+                <li><a href="<?= base_url('harga')?>">Harga</a></li>
+                <li><a href="<?= base_url('support')?>">Support</a></li>
+                <li><a href="<?= base_url('customer_service')?>">Customer Service</a></li>
             </ul>
         </div>
         <div class="location_main">Contact Person : <a href="#">+62-821-5423-1513</a></div>

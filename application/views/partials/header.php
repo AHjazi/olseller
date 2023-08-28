@@ -60,25 +60,4 @@
 </head>
 
 <body>
-    <!-- banner bg main start -->
-    <div class="banner_bg_main">
-        <!-- header top section start -->
-        <div class="container">
-            <div class="header_section_top">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="custom_menu">
-                            <ul>
-                            <li><span class="toggle_icon" onclick="openNav()"><img src="assets/images/toggle-icon.png" width="20px" height="10px"></span>
-                            </li>    
-                            <li><a href="<?= base_url('produk')?>">produk</a></li>
-                                <li><a href="<?= base_url('produk')?>">Layanan</a></li>
-                                <li><a href="<?= base_url('produk')?>">harga</a></li>
-                                <li><a href="<?= base_url('produk')?>">support</a></li>
-                                <li><a href="<?= base_url('produk')?>">customer_service</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+ 

@@ -66,4 +66,35 @@ class LandingPage extends CI_Controller {
         $this->load->view('Landing_Page/Produk/customer_service');
         $this->load->view('partials/footer');
 	}
+	public function daftar()
+	{
+		$data['title'] = "Olseller | Welcome";
+		$this->load->view('partials/header', $data);
+        $this->load->view('Daftar/daftar');
+        // $this->load->view('partials/footer');
+	}
+
+	public function tambah() {
+        // Ambil data dari input form (gantikan ini dengan metode sesuai dengan CI3 Anda)
+        $data = array(
+            'id_member' => $this->input->post('id_member'), // Sesuaikan dengan mekanisme ID yang Anda gunakan
+            'nama' => $this->input->post('nama'),
+            'alamat' => $this->input->post('alamat'),
+            'nama_usaha' => $this->input->post('nama_usaha'),
+            'jenis_usaha' => $this->input->post('jenis_usaha'),
+            'lokasi_usaha' => $this->input->post('lokasi_usaha'),
+            'no_hp' => $this->input->post('no_hp'),
+            'email' => $this->input->post('email')
+        );
+
+        // Panggil model untuk menambahkan data
+        $result = $this->M_Daftar->insert_data($data);
+
+        if ($result) {
+           redirect('dashboard');
+        } else {
+			
+        
+        }
+    }
 }

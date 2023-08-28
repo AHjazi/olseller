@@ -82,15 +82,11 @@ $route['do_login']= 'Login/Login/Process_Login';
 
 // Landing
 $route['produk']= 'LandingPage/produk';
+$route['layanan']= 'LandingPage/layanan';
+$route['harga']= 'LandingPage/harga';
+$route['support']= 'LandingPage/support';
+$route['customer_service']= 'LandingPage/customer_service';
 
-// Landing
-$route['produk']= 'LandingPage/layanan';
-
-// Landing
-$route['produk']= 'LandingPage/harga';
-
-// Landing
-$route['produk']= 'LandingPage/support';
-
-// Landing
-$route['produk']= 'LandingPage/customer_service';
+// Daftar
+$route['daftar']= 'LandingPage/daftar';
+$route['tambah_daftar']= 'LandingPage/tambah';

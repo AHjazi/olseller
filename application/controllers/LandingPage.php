@@ -75,14 +75,15 @@ class LandingPage extends CI_Controller {
 
 	public function tambah_data() 
 	{
-		$id_member = $this->input->post('id_member');
-		$nama = $this->input->post('nama');
-		$alamat = $this->input->post('alamat');
-		$nama_usaha = $this->input->post('nama_usaha');
-		$jenis_usaha = $this->input->post('jenis_usaha');
-		$lokasi_usaha = $this->input->post('lokasi_usaha');
-		$no_hp = $this->input->post('no_hp');
-		$email = $this->input->post('email');
+$id_member    = htmlspecialchars($this->input->post('id_member'));
+$nama         = htmlspecialchars($this->input->post('nama'));
+$alamat       = htmlspecialchars($this->input->post('alamat'));
+$nama_usaha   = htmlspecialchars($this->input->post('nama_usaha'));
+$jenis_usaha  = htmlspecialchars($this->input->post('jenis_usaha'));
+$lokasi_usaha = htmlspecialchars($this->input->post('lokasi_usaha'));
+$no_hp        = htmlspecialchars($this->input->post('no_hp'));
+$email        = htmlspecialchars($this->input->post('email'));
+
 		
 		$data = array(
 			'nama' => $nama,
@@ -97,5 +98,5 @@ class LandingPage extends CI_Controller {
 		$result= $this->M_Daftar->insert_data($data,'member');
 
 		redirect('LandingPage');
-		}
+	}
 }

@@ -73,16 +73,17 @@ class Produk extends CI_Controller {
 		if($this->form_validation->run() == FALSE){
 			// $this->tambah();
 		}else{
-			$id_product	  	  = $this->input->post('id_product');
-			$user_id 	 	  = $this->input->post('user_id');
-			$kategori 	 	  = $this->input->post('kategori');
-			$nama 	 	 	  = $this->input->post('nama');
-			$deskripsi 	 	  = $this->input->post('deskripsi');
-			$harga 	 	  = $this->input->post('harga');
-			$stok 	 	  = $this->input->post('stok');
-			$gambar 	 	  = $this->input->post('gambar');
-			$createdAt 	 	  = $this->input->post('createdAt');
-			$updatedAt 	 	  = $this->input->post('updatedAt');
+$id_product   = htmlspecialchars($this->input->post('id_product'));
+$user_id      = htmlspecialchars($this->input->post('user_id'));
+$kategori     = htmlspecialchars($this->input->post('kategori'));
+$nama         = htmlspecialchars($this->input->post('nama'));
+$deskripsi    = htmlspecialchars($this->input->post('deskripsi'));
+$harga        = htmlspecialchars($this->input->post('harga'));
+$stok         = htmlspecialchars($this->input->post('stok'));
+$gambar       = htmlspecialchars($this->input->post('gambar'));
+$createdAt    = htmlspecialchars($this->input->post('createdAt'));
+$updatedAt    = htmlspecialchars($this->input->post('updatedAt'));
+
 			
 			$data = array(
 				'id_product'		=> $id_product,
@@ -113,16 +114,17 @@ class Produk extends CI_Controller {
 	public function update_data_aksi()
 	{
 		$this->_rules();
-		$id_product	  	  = $this->input->post('id_product');
-			$user_id 	 	  = $this->input->post('user_id');
-			$kategori 	 	  = $this->input->post('kategori');
-			$nama 	 	 	  = $this->input->post('nama');
-			$deskripsi 	 	  = $this->input->post('deskripsi');
-			$harga 	 	  = $this->input->post('harga');
-			$stok 	 	  = $this->input->post('stok');
-			$gambar 	 	  = $this->input->post('gambar');
-			$createdAt 	 	  = $this->input->post('createdAt');
-			$updatedAt 	 	  = $this->input->post('updatedAt');
+$id_product   = htmlspecialchars($this->input->post('id_product'));
+$user_id      = htmlspecialchars($this->input->post('user_id'));
+$kategori     = htmlspecialchars($this->input->post('kategori'));
+$nama         = htmlspecialchars($this->input->post('nama'));
+$deskripsi    = htmlspecialchars($this->input->post('deskripsi'));
+$harga        = htmlspecialchars($this->input->post('harga'));
+$stok         = htmlspecialchars($this->input->post('stok'));
+$gambar       = htmlspecialchars($this->input->post('gambar'));
+$createdAt    = htmlspecialchars($this->input->post('createdAt'));
+$updatedAt    = htmlspecialchars($this->input->post('updatedAt'));
+
 			$data = array(
 				'id_product'		=> $id_product,
 				'user_id'	=> $user_id,

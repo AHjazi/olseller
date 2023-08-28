@@ -1,6 +1,6 @@
 <!-- banner bg main end -->
 <!-- fashion section start -->
-<div class="fashion_section">
+<div class="fashion_section mt-5">
     <div id="main_slider" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -10,34 +10,34 @@
                         <div class="row">
                             <div class="col-lg-4 col-sm-4">
                                 <div class="box_main">
-                                    <h4 class="shirt_text">Transaksi Cepat dan Akurat</h4>
+                                    <h4 class="shirt_text">Transaksi <br> Cepat dan Akurat</h4>
                                     <p class="price_text"> <span style="color: #262626;"></span></p>
-                                    <div class="tshirt_img"><img src="assets/images/lp.jpg"></div>
+                                    <div class="tshirt_img"><img src="assets/images/lp.jpg" width="100%" height="auto"></div>
                                     <div class="btn_main">
                                         Proses pembayaran dengan cepat dan akurat melalui pemindaian kode QR atau pencarian produk.
-Kurangi antrian dengan pembayaran tanpa kontak, ideal untuk era digital saat ini.
+                                        Kurangi antrian dengan pembayaran tanpa kontak, ideal untuk era digital saat ini.
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-sm-4">
                                 <div class="box_main">
-                                    <h4 class="shirt_text"> Pemantauan Stok yang Akurat</h4>
+                                    <h4 class="shirt_text">Pemantauan Stok yang Akurat</h4>
                                     <p class="price_text"> <span style="color: #262626;"></span></p>
-                                    <div class="tshirt_img"><img src="assets/images/lp3.jpg"></div>
+                                    <div class="tshirt_img"><img src="assets/images/lp3.jpg" width="100%" height="auto"></div>
                                     <div class="btn_main">
                                         Pantau stok produk Anda secara real-time, hindari kehabisan atau kelebihan stok.
-Terima notifikasi otomatis saat stok mencapai batas tertentu.
+                                        Terima notifikasi otomatis saat stok mencapai batas tertentu.
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-sm-4">
                                 <div class="box_main">
-                                    <h4 class="shirt_text">Laporan Keuangan Lengkap</h4>
+                                    <h4 class="shirt_text">Laporan <br>Keuangan Lengkap</h4>
                                     <p class="price_text"> <span style="color: #262626;"></span></p>
-                                    <div class="tshirt_img"><img src="assets/images/lp2.jpg"></div>
+                                    <div class="tshirt_img"><img src="assets/images/lp2.jpg" width="100%" height="auto"></div>
                                     <div class="btn_main">
                                         Akses laporan penjualan, keuntungan, dan analisis bisnis dalam hitungan detik.
-Tampilan visual yang jelas untuk membantu Anda mengambil keputusan yang lebih baik.
+                                        Tampilan visual yang jelas untuk membantu Anda mengambil keputusan yang lebih baik.
                                     </div>
                                 </div>
                             </div>
@@ -45,17 +45,19 @@ Tampilan visual yang jelas untuk membantu Anda mengambil keputusan yang lebih ba
                     </div>
                 </div>
             </div>
-        <a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev">
-            <i class="fa fa-angle-left"></i>
-        </a>
-        <a class="carousel-control-next" href="#main_slider" role="button" data-slide="next">
-            <i class="fa fa-angle-right"></i>
-        </a>
+            </div>
+            <a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev">
+                <i class="fa fa-angle-left"></i>
+            </a>
+            <a class="carousel-control-next" href="#main_slider" role="button" data-slide="next">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        </div>
     </div>
 </div>
 <!-- fashion section end -->
 <!-- electronic section start -->
-<div class="fashion_section">
+<div class="fashion_section mt-5">
     <div id="electronic_main_slider" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -109,7 +111,7 @@ Tawarkan diskon khusus atau program loyalitas untuk pelanggan setia.
 </div>
 <!-- electronic section end -->
 <!-- jewellery  section start -->
-<div class="jewellery_section">
+<div class="jewellery_section mt-5">
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <div class="container">
@@ -130,12 +132,6 @@ Tidak diperlukan keahlian teknis. Aplikasi kasir kami didesain dengan antarmuka 
                     </div>
                 </div>
             </div>      
-        <a class="carousel-control-prev" href="#jewellery_main_slider" role="button" data-slide="prev">
-            <i class="fa fa-angle-left"></i>
-        </a>
-        <a class="carousel-control-next" href="#jewellery_main_slider" role="button" data-slide="next">
-            <i class="fa fa-angle-right"></i>
-        </a>
         <div class="loader_main">
             <div class="loader"></div>
         </div>

@@ -5,13 +5,13 @@
                 <div class="containt_main">
                     <div id="mySidenav" class="sidenav">
                         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                        <a href="index.html">Home</a>
-                        <a href="fashion.html">Fashion</a>
-                        <a href="electronic.html">Electronic</a>
-                        <a href="add_product.php">Jewellery</a>
-                        <a href="<?php echo base_url('tambah_produk')?>">Add Product</a>
+                        <a href="index.html">Produk</a>
+                        <a href="fashion.html">Layanan</a>
+                        <a href="electronic.html">Harga</a>
+                        <a href="add_product.php">Support</a>
+                        <a href="<?php echo base_url('tambah_produk')?>">Customer Service</a>
                     </div>
-                    <!-- <span class="toggle_icon" onclick="openNav()"><img src="assets/images/toggle-icon.png"></span> -->
+                    <span class="toggle_icon" onclick="openNav()"><img src="assets/images/toggle-icon.png"></span>
                     <div class="dropdown">
                         <!-- <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All Category
@@ -46,18 +46,18 @@
                                 </a>
                             </div> -->
                         </div>
-                        <!-- <div class="login_menu">
+                        <div class="login_menu">
                             <ul>
-                                <li><a href="#">
+                                <!-- <li><a href="#">
                                         <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                                         <span class="padding_10">Cart</span></a>
-                                </li>
-                                <li><a href="#">
+                                </li> -->
+                                <!-- <li><a href="#">
                                         <i class="fa fa-user" aria-hidden="true"></i>
                                         <span class="padding_10">Cart</span></a>
-                                </li>
+                                </li> -->
                             </ul>
-                        </div> -->
+                        </div>
                     </div>
                 </div>
             </div>
@@ -67,14 +67,17 @@
         <!-- banner section start -->
         <div class="banner_section layout_padding">
             <div class="container">
-                <div id="my_slider" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="row">
                                 <div class="col-sm-12">
                                     <h1 class="banner_taital">Ayo Mulai <br>Bisnis Mudah Dengan Olseller</h1>
-                                    <div class="buynow_bt"><a href="#">Beli Sekarang</a></div>
-                                </div>
+                                    <div class="row">
+                                    <div class="buynow_bt"><a href="#">Daftar Sekarang</a></div>
+                                    <div class="buynow_bt"><a href="#"<?php echo base_url('dashboard'); ?>" title="Login" class="nav-link" aria-expanded="true">
+    Login
+                                </div>                                    
+                            </div>
                             </div>
                         </div>
                         <div class="carousel-item">

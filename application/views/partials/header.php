@@ -75,10 +75,6 @@
                                 <li><a href="#">Harga</a></li>
                                 <li><a href="#">Support</a></li>
                                 <li><a href="#">Customer Service</a></li>
-                                 <div class="header_box">
-                        <div class="lang_box ">
-                        <a href="<?php echo base_url('dashboard'); ?>" title="Login" class="nav-link" aria-expanded="true">
-    Login
                             </ul>
                         </div>
                     </div>

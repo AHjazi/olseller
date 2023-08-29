@@ -31,7 +31,34 @@
 <!-- Template JS File -->
 <script src="<?= base_url();?>assets_admin/js/scripts.js"></script>
 <script src="<?= base_url();?>assets_admin/js/custom.js"></script>
+<script>
+$(document).ready(function() {
+    var dataTable = $('#data_table').DataTable({
+        "ajax": {
+            "url": "<?php echo base_url('Produk/Produk/get_data'); ?>",
+            "type": "POST",
+            "data": function(d) {
+                d.start_date = $('#start_date').val();
+                d.end_date = $('#end_date').val();
+            }
+        },
+        "columns": [{
+                "data": "id"
+            },
+            {
+                "data": "name"
+            },
+            {
+                "data": "date"
+            }
+        ]
+    });
 
+    $('#filter').click(function() {
+        dataTable.ajax.reload();
+    });
+});
+</script>
 
 <script>
 document.getElementById("exportToPdfBtn").addEventListener("click", function() {
@@ -39,7 +66,52 @@ document.getElementById("exportToPdfBtn").addEventListener("click", function() {
     document.getElementById("exportForm").action = "<?php echo base_url('Export_pdf'); ?>";
     // Submit the form
     document.getElementById("exportForm").submit();
-});
+}); <
+!--LOGUT-- >
+<
+script >
+    document.getElementById('logout-link').addEventListener('click', function(event) {
+        event.preventDefault();
+
+        const token = getTokenFromSession(); // Fungsi untuk mengambil token dari sesi
+        const user_id = getUserIdFromSession(); // Fungsi untuk mengambil user_id dari sesi
+
+        if (!token) {
+            console.error('Token is missing');
+            return;
+        }
+
+        const requestData = {
+            user_id: user_id
+        };
+
+        fetch('https://couplemoment.com/user/logout', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${token}` // Sertakan token dalam header Authorization
+                },
+                body: JSON.stringify(requestData)
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Logout successful:', data.message);
+                window.location.href = '<?= base_url('login'); ?>';
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+    });
+
+function getTokenFromSession() {
+    // Implementasikan cara Anda mengambil token dari sesi atau local storage
+    return sessionStorage.getItem('token');
+}
+
+function getUserIdFromSession() {
+    // Implementasikan cara Anda mengambil user_id dari sesi atau elemen tersembunyi
+    return sessionStorage.getItem('user_id');
+}
 </script>
 </body>
 

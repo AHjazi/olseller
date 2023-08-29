@@ -67,16 +67,60 @@
             </div>
 
         </div>
-        <div class="col-lg-8">
+        <div class="col-lg-6">
+
             <div class="card">
                 <div class="card-header">
-                    <h4>Budget vs Sales</h4>
+                    <h4>Transaksi vs Jumlah Produk Per Kategori</h4>
                 </div>
                 <div class="card-body">
                     <canvas id="myChart" height="158"></canvas>
                 </div>
             </div>
+
+            <script>
+            var ctx = document.getElementById('myChart').getContext('2d');
+
+            // Contoh data (ganti dengan data Anda)
+            var categories = ['Januari', 'February', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September',
+                'Oktober', 'November', 'Desember'
+            ];
+            var transactionData = [25, 40, 15];
+            var productData = [120, 80, 60];
+
+            var myChart = new Chart(ctx, {
+                type: 'line', // Ganti tipe grafik menjadi line
+                data: {
+                    labels: categories,
+                    datasets: [{
+                        label: 'Transaksi',
+                        data: transactionData,
+                        borderColor: 'rgba(54, 162, 235, 1)',
+                        backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                        fill: true,
+                    }, {
+                        label: 'Jumlah Produk Per Kategori',
+                        data: productData,
+                        borderColor: 'rgba(255, 99, 132, 1)',
+                        backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                        fill: true,
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+            </script>
+
+
             <div class="section-body">
             </div>
     </section>
+</div>
 </div>

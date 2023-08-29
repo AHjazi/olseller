@@ -7,11 +7,12 @@
     <title>OlSaller</title>
 
 
-     <link rel="icon" href="<?= base_url('assets/images/landing.png') ?>" type="image/x-icon">
+    <link rel="icon" href="<?= base_url('assets/images/landing.png') ?>" type="image/x-icon">
     <!-- General CSS Files -->
     <link rel="stylesheet" href="<?= base_url();?>assets_admin/modules/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?= base_url();?>assets_admin/modules/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 
     <!-- CSS Libraries -->
     <link rel="stylesheet" href="<?= base_url();?>assets_admin/modules/datatables/datatables.min.css">
@@ -28,6 +29,7 @@
 
     <!-- Start GA -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-94034622-3"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
 

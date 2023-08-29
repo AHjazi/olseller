@@ -1,0 +1,11 @@
+<?php
+class M_Chart extends CI_Model {
+
+    public function getChartData() {
+        // Gantikan dengan kode untuk mengambil data dari database
+        // Misalnya, Anda memiliki tabel "transactions" dengan kolom "category", "transaction_count", dan "product_count"
+        $query = $this->db->get('transactions');
+        return $query->result();
+    }
+}
+?>

@@ -7,22 +7,22 @@
                     <div class="col-sm-12">
                         <div class="custom_menu">
                             <ul>
-                            <li><span class="toggle_icon" onclick="openNav()"><img src="assets/images/toggle-icon.png" width="20px" height="10px"></span>
+                                <li><span class="toggle_icon" onclick="openNav()"><img src="assets/images/toggle-icon.png" width="20px" height="10px"></span>
                             </li>    
                             <li><a href="<?= base_url('produk')?>">Produk</a></li>
-                                <li><a href="<?= base_url('layanan')?>">Layanan</a></li>
-                                <li><a href="<?= base_url('harga')?>">Harga</a></li>
-                                <li><a href="<?= base_url('support')?>">Support</a></li>
-                                <li><a href="<?= base_url('customer_service')?>">Customer Service</a></li>
-                            </ul>
-                        </div>
+                            <li><a href="<?= base_url('layanan')?>">Layanan</a></li>
+                            <li><a href="<?= base_url('harga')?>">Harga</a></li>
+                            <li><a href="<?= base_url('support')?>">Support</a></li>
+                            <li><a href="<?= base_url('customer_service')?>">Customer Service</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-<!-- header section start -->
-<div class="header_section">
-    <div class="container">
+    </div>
+    <!-- header section start -->
+    <div class="header_section">
+        <div class="container">
         <div class="containt_main">
                     <div id="mySidenav" class="sidenav">
                         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -44,14 +44,15 @@
                     </div>
                 </div>
             </div>
-        <!-- header section end -->
-        <!-- banner section start -->
-        <div class="banner_section layout_padding m-5">
-            <div class="container">
+            <!-- header section end -->
+            <span class="toggle_icon" onclick="openNav()"><img src="assets/images/toggle-icon.png" width="20px" height="10px"></span>
+            <!-- banner section start -->
+            <div class="banner_section layout_padding p-lg-5">
+            <div class="container p-lg-5">
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
+                    <div class="carousel-item active p-lg-5">
                         <div class="row">
-                            <div class="col-sm-12 mb-3">
+                            <div class="col-sm-12 col-lg-12 mb-3">
                                 <h1 class="banner_taital">Ayo Mulai<br>Bisnis Mudah Dengan Olseller</h1>
                                 <div class="row">
                                     <div class="buynow_bt" ><a href="<?= base_url('daftar')?>">Daftar Sekarang</a></div>

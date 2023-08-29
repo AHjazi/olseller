@@ -1,4 +1,4 @@
---------------------------------------------------------------------- File Name: style.css ---------------------------------------------------------------------*/
+/*---------------------------------------------------------------------  ---------------------------------------------------------------------*/
 /*--------------------------------------------------------------------- import Files ---------------------------------------------------------------------*/
 
 @import url(animate.min.css);
@@ -100,7 +100,7 @@ h4 a,
 h5 a,
 h6 a {
     color: #212121;
-    text-decoration: none!important;
+    text-decoration: none !important;
     opacity: 1
 }
 
@@ -145,7 +145,7 @@ img {
     height: auto;
 }
 
- :focus {
+:focus {
     outline: 0;
 }
 
@@ -262,6 +262,23 @@ button {
     color: #f26522;
 }
 
+/* CSS untuk tampilan mobile */
+/* @media (max-width: 768px) {
+    .custom_menu ul {
+        flex-direction: column;
+    }
+
+    .custom_menu li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .toggle_icon {
+        display: inline-block;
+        cursor: pointer;
+    }
+} */
+
 
 /* header top section end */
 
@@ -336,6 +353,7 @@ button {
     .sidenav {
         padding-top: 15px;
     }
+
     .sidenav a {
         font-size: 18px;
     }
@@ -788,6 +806,7 @@ a:hover {
     0% {
         -webkit-transform: rotate(0deg);
     }
+
     100% {
         -webkit-transform: rotate(360deg);
     }
@@ -797,6 +816,7 @@ a:hover {
     0% {
         transform: rotate(0deg);
     }
+
     100% {
         transform: rotate(360deg);
     }

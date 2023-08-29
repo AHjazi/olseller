@@ -16,9 +16,9 @@ class Login extends CI_Controller {
 
 	public function process_login()
 	{
-		$email = $this->input->post('email');
-		$password = $this->input->post('password');
-		
+		$email = htmlspecialchars($this->input->post('email'));
+		$password = htmlspecialchars($this->input->post('password'));
+
 		$user = $this->M_User->get_user_by_email($email);
 		
     if ($user && password_verify($password, $user->password)) {
